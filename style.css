@@ -1,0 +1,150 @@
+/* ==== Theme Variables ==== */
+:root {
+    --bg-color: #f0f4f8;
+    --container-bg: #ffffff;
+    --text-color: #333;
+    --accent: #007BFF;
+    --btn-bg: #007BFF;
+    --btn-hover: #0056b3;
+    --table-header: #007BFF;
+    --table-header-text: white;
+}
+
+body[data-theme='dark'] {
+    --bg-color: #121212;
+    --container-bg: #1e1e1e;
+    --text-color: #f5f5f5;
+    --accent: #66b2ff;
+    --btn-bg: #66b2ff;
+    --btn-hover: #3399ff;
+    --table-header: #333;
+    --table-header-text: #fff;
+}
+
+/* ==== General Styling ==== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ==== Container Styling ==== */
+.form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: var(--container-bg);
+    padding: 30px 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 12px;
+}
+
+/* ==== Headings ==== */
+h2 {
+    text-align: center;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+/* ==== Form Labels & Inputs ==== */
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+/* ==== Submit Button ==== */
+input[type="submit"] {
+    background-color: var(--btn-bg);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--btn-hover);
+}
+
+/* ==== Action Buttons ==== */
+.add-btn, .edit-btn, .delete-btn {
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.add-btn {
+    background: #28a745;
+}
+.edit-btn {
+    background: #ffc107;
+    color: black;
+}
+.delete-btn {
+    background: #dc3545;
+}
+
+.add-btn:hover {
+    background: #218838;
+}
+.edit-btn:hover {
+    background: #e0a800;
+}
+.delete-btn:hover {
+    background: #c82333;
+}
+
+/* ==== Table Styling ==== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+table th {
+    background-color: var(--table-header);
+    color: var(--table-header-text);
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 600px) {
+    .form-container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    table, table th, table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
