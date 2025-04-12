@@ -1,4 +1,4 @@
-/* ==== Theme Variables ==== */
+
 :root {
     --bg-color: #f0f4f8;
     --container-bg: #ffffff;
@@ -21,7 +21,7 @@ body[data-theme='dark'] {
     --table-header-text: #fff;
 }
 
-/* ==== General Styling ==== */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: var(--bg-color);
@@ -31,7 +31,7 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-/* ==== Container Styling ==== */
+
 .form-container {
     max-width: 600px;
     margin: 40px auto;
@@ -41,14 +41,14 @@ body {
     border-radius: 12px;
 }
 
-/* ==== Headings ==== */
+
 h2 {
     text-align: center;
     color: var(--accent);
     margin-bottom: 20px;
 }
 
-/* ==== Form Labels & Inputs ==== */
+
 label {
     display: block;
     margin-bottom: 8px;
@@ -66,7 +66,7 @@ input[type="password"] {
     box-sizing: border-box;
 }
 
-/* ==== Submit Button ==== */
+
 input[type="submit"] {
     background-color: var(--btn-bg);
     color: white;
@@ -82,7 +82,7 @@ input[type="submit"]:hover {
     background-color: var(--btn-hover);
 }
 
-/* ==== Action Buttons ==== */
+
 .add-btn, .edit-btn, .delete-btn {
     padding: 8px 14px;
     border-radius: 6px;
@@ -113,7 +113,7 @@ input[type="submit"]:hover {
     background: #c82333;
 }
 
-/* ==== Table Styling ==== */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -136,7 +136,7 @@ table tr:nth-child(even) {
     background-color: rgba(0, 0, 0, 0.03);
 }
 
-/* ==== Responsive ==== */
+
 @media (max-width: 600px) {
     .form-container {
         padding: 20px;
